@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: -webkit-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+    background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+    background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+    background-image: linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+}
+
+/* Styles for the body*/
+body {
+    width:962px;
+    border: 1px solid black;
+    margin: 15px auto; 
+    background-color: hsl(180,60%,50%,.5);  
+}
+
+header img {
+    float:left;
+    
+    margin-right: 30px;
+    margin-top: 5px;
+    margin: 5px 30px 5px 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+h2, p, a{
+    padding: 1em;
+    font-family: sans-serif, Arial, Helvetica; 
+    color: black;  
+    text-shadow: -1px -1px 1px white;   
+}
+/* Styles for the header*/
+header {
+    width: 962px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    background-color: hsl(180,60%,50%,.5);   
+}
+
+header h2 {   
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: -1px -1px 1px white;;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+header h3 {
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: -1px -1px 1px white;
+    text-align: left;
+    padding-bottom: 10px;
+    
+}
+/* Styles for the Navegation Bar*/
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;   
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0em;
+    float:left;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    padding: 1em 0;   
+    text-align:center;
+    text-decoration: none;
+    display:block;
+    width:320.65px;
+    background-image: -webkit-linear-gradient( 45deg, #003399 0%, #003399 50%, #003399 100%);
+    background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+    background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
+    background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
+    /*text-shadow: -1px -1px 1px white;*/
+    color: white;
+    text-shadow: 1px 1px 1px #003399;
+}
+#nav_menu ul li a:hover {
+    color: yellow;    
+}
+
+
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top:100%;    
+}
+
+#nav_menu ul ul li {
+    float:none;
+    position:relative;
+}
+
+#nav_menu > ul::after, #nav_menu ul ul::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+#nav_menu ul li:hover > ul, #nav_menu ul li:focus > ul {    
+    display: block;    
+}
+
+#nav_menu ul ul li ul {
+    right: -100%;
+    position: absolute; 
+    top:0;   
+}
+
+#nav_menu ul ul li.last_item ul li ul {
+    left: -100%;
+    position: absolute; 
+    top:0;   
+}
+
+/* Styles for the main*/
+#left_aside {
+    width: 168px; 
+    height: 620px;  
+    float:left; 
+    border: 1px solid blue;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 1px 0 2px 2px blue;
+    background-color: #334d4d;;
+    padding-right: 15px;
+}
+#left_aside h2 {
+    padding: 2em 1.5em;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    font-size: 100%;
+    text-align: center;
+}
+
+#left_aside ol {
+    padding-left: 15px;
+    list-style: none;
+}
+
+#left_aside ol li {
+    padding-bottom: 2em;
+    padding-right: 1em;
+ }
+
+ #left_aside ol li a{
+    padding: 0;
+    padding-left: 15px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    text-align: justify;
+ }
+
+ #left_aside ol a:visited {
+    color: #cc6699;
+ }
+
+ #left_aside img {
+     height: 100px;
+     width: 150px;
+     margin-bottom: 10px;
+     border: 1px solid blue;
+ }
+
+section {
+    width: 575px;
+    float:left;
+}
+
+section h1{
+    font-family: sans-serif, Arial, Helvetica; 
+    color: black;  
+    text-shadow: -1px -1px 1px white;   
+    font-size: 150%;
+    padding-left: 2.5em;
+}
+
+section figure {
+    margin-left: 3em;
+    float: left;
+
+    
+}
+
+section figure img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.larger img {
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;  
+}
+
+.larger {
+    margin-top: 3em;
+    margin-left: 0;
+}
+
+.larger figcaption {
+     display: block;
+     padding-left: 0;
+     font-size: 80%;
+}
+
+.higher {
+    margin-top:0;
+    margin-left:0em; 
+    margin-right: 0; 
+}
+
+.higher img {
+    width:164px;
+    padding:0;
+    margin:0;
+}
+.higher figcaption { 
+    font-size: 80%;
+}
+
+section figcaption {
+    display: block;
+    padding-left: 0;
+    font-size: 80%;
+}
+
+div {
+    float:left; 
+    margin-top: 2em;
+}
+
+.last3 figure {
+    margin-left: 0;
+    float:right;    
+}
+#right_aside {
+    width: 200px;   
+    float:right;         
+}
+#last_one {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#before_last {
+    margin-left: 0;
+}
+#before_last img {
+    width:150px;
+}
+
+#right_aside div h2 {
+    padding-right: 10px;
+    padding-left: 2em; 
+    font-size: 120%;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
+#right_aside div ul {
+    padding-right: 1em;
+    padding-left: 1em; 
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
+#right_aside div ul li{
+    padding-bottom: 1em;
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    text-align: center;
+}
+#right_aside div ul li a{
+    padding-bottom: 1em;
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    text-align: right;
+}
+
+#right_aside div {
+    margin-right: .5em;
+    background-color: darkcyan;
+    margin-top: 5em;
+ }
+/* Styles for the footer*/
+footer {
+    width: 962px;
+    border-top: 1px solid black;
+    clear:both;
+    text-align: center;
+    background-color: darkcyan;   
+}
+
+footer p {
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
