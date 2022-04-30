@@ -10,6 +10,13 @@ html {
     background-image: linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
 }
 
+h2, p, a{
+    padding: 1em;
+    font-family: aria, Helvetica, sans-serif;
+    color: black;
+    text-shadow: -1px -1px 1px white;
+}
+
 /* Styles for the body */
 body {
     width:962px;
@@ -18,47 +25,35 @@ body {
     background-color: hsl(180,60%,50%,.5);  
 }
 
-header img {
-    float:left;
-    
-    margin-right: 30px;
-    margin-top: 5px;
-    margin: 5px 30px 5px 5px;
-    padding: 5px;
-    border: 1px solid black;
-}
+/* Styles for the header */
 
-h2, p, a{
-    padding: 1em;
-    font-family: sans-serif, Arial, Helvetica; 
-    color: black;  
-    text-shadow: -1px -1px 1px white;   
-}
-/* Styles for the header*/
 header {
     width: 962px;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    padding-bottom: .5em;
     background-color: hsl(180,60%,50%,.5);   
 }
 
-header h2 {   
-    font-family: 'Courier New', Courier, monospace;
+header img {
+    float:left;
+    margin: 5px 30px 5px 5px;
+    padding: 5px;
+}
+
+header h2 {
     text-shadow: -1px -1px 1px white;;
     text-align: left;
-    padding-bottom: 5px;
+    padding-bottom: .25em;
 }
 
 header h3 {
-    
-    font-family: 'Courier New', Courier, monospace;
     text-shadow: -1px -1px 1px white;
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: .5em;
     
 }
-/* Styles for the Navegation Bar*/
-/* Styles for the Navegation Bar*/
+
+/* Styles for the Navigation Bar */
 #nav_menu ul {
     list-style-type: none;
     padding: 0;
@@ -82,14 +77,12 @@ header h3 {
     background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
-    /*text-shadow: -1px -1px 1px white;*/
     color: white;
     text-shadow: 1px 1px 1px #003399;
 }
 #nav_menu ul li a:hover {
     color: yellow;    
 }
-
 
 #nav_menu ul ul{
     display: none;
@@ -123,7 +116,7 @@ header h3 {
     position: absolute; 
     top:0;   
 }
-/* Styles for the main*/
+/* Styles for the left aside */
 #left_aside {
     width: 168px; 
     height: 820px;  
@@ -152,19 +145,18 @@ header h3 {
     padding-right: 1em;
  }
 
- #left_aside ol li a{
+#left_aside ol li p, #left_aside ol li a{
     padding: 0;
-    padding-left: 15px;
-    margin-top: 10px;
+    text-align: center;
     color: white;
     text-shadow: -1px -1px 1px black;
- }
+}
 
  #left_aside ol a:visited {
     color: #cc6699;
  }
 
- #left_aside img {
+#left_aside img {
      height: 100px;
      width: 150px;
      margin-bottom: 10px;
@@ -175,6 +167,11 @@ header h3 {
     border: none;
 }
 
+#left_aside a:hover, #left_aside a:focus {
+    font-style: italic;
+}
+
+/* styles for the article */
 article {
     width:540px;
     float: left;
@@ -191,7 +188,9 @@ article h2 {
 
 article img {   
     margin: 0 1.5em .75em .75em;   
-    border: 1px solid black;
+    border: 2px solid #003399;
+    box-shadow: 4px -4px 4px 4px #003399;
+    border-radius: 10px 0 5px 10px;
     float:right;
 }
 
