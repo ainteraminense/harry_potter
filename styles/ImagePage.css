@@ -12,12 +12,12 @@ html {
 
 h2, p, a{
     padding: 1em;
-    font-family: aria, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
     color: black;
     text-shadow: -1px -1px 1px white;
 }
 
-/* Styles for the body */
+/* styles for the body*/
 body {
     width:962px;
     border: 1px solid black;
@@ -25,13 +25,12 @@ body {
     background-color: hsl(180,60%,50%,.5);  
 }
 
-/* Styles for the header */
-
+/* styles for the header*/
 header {
     width: 962px;
     border-bottom: 1px solid black;
     padding-bottom: .5em;
-    background-color: hsl(180,60%,50%,.5);   
+    background-color: hsl(180,60%,50%,.5);
 }
 
 header img {
@@ -50,10 +49,10 @@ header h3 {
     text-shadow: -1px -1px 1px white;
     text-align: left;
     padding-bottom: .5em;
-    
-}
 
-/* Styles for the Navigation Bar */
+}
+/* styles for the Navigation Bar*/
+
 #nav_menu ul {
     list-style-type: none;
     padding: 0;
@@ -77,12 +76,14 @@ header h3 {
     background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
+    /*text-shadow: -1px -1px 1px white;*/
     color: white;
     text-shadow: 1px 1px 1px #003399;
 }
 #nav_menu ul li a:hover {
     color: yellow;    
 }
+
 
 #nav_menu ul ul{
     display: none;
@@ -116,11 +117,12 @@ header h3 {
     position: absolute; 
     top:0;   
 }
-/* Styles for the left aside */
+
+/* styles for the left aside */
 #left_aside {
-    width: 168px; 
-    height: 820px;  
-    float:left; 
+    width: 168px;
+    height: 820px;
+    float:left;
     border: 1px solid blue;
     border-radius: 0 10px 10px 0;
     box-shadow: 1px 0 2px 2px blue;
@@ -143,25 +145,26 @@ header h3 {
 #left_aside ol li {
     padding-bottom: 2em;
     padding-right: 1em;
- }
+}
 
 #left_aside ol li p, #left_aside ol li a{
     padding: 0;
     text-align: center;
     color: white;
     text-shadow: -1px -1px 1px black;
+    text-decoration: none;
 }
 
- #left_aside ol a:visited {
+#left_aside ol a:visited {
     color: #cc6699;
- }
+}
 
 #left_aside img {
-     height: 100px;
-     width: 150px;
-     margin-bottom: 10px;
-     border: 1px solid blue;
- }
+    height: 100px;
+    width: 150px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+}
 
 #left_aside img[class="no_border"] {
     border: none;
@@ -171,45 +174,100 @@ header h3 {
     font-style: italic;
 }
 
-/* styles for the article */
-article {
-    width:540px;
+/* styles for the section */
+section {
+    width: 575px;
+    float:left;
+}
+
+section h1{
+    font-family: sans-serif, Arial, Helvetica; 
+    color: black;  
+    text-shadow: -1px -1px 1px white;   
+    font-size: 150%;
+    padding-left: 2.5em;
+}
+
+section figure {
+    margin-left: 3em;
     float: left;
-    border-right: 1px solid black;    
-    height: 800px;
-    padding-left: 20px;   
-    margin-right: 10px;
-    padding-bottom: 20px;
+
+    
 }
 
-article h2 {
-    padding-left: 2em;
+section figure img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
 }
 
-article img {   
-    margin: 0 1.5em .75em .75em;   
-    border: 2px solid #003399;
-    box-shadow: 4px -4px 4px 4px #003399;
-    border-radius: 10px 0 5px 10px;
-    float:right;
+.larger img {
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;  
 }
 
-article h3 {    
-    font-size: 100%;
-    padding-right: 20px;
-    line-height: 1.4em;
+.larger {
+    margin-top: 3em;
+    margin-left: 0;
 }
 
-/* Styles for the aside */
+.larger figcaption {
+     display: block;
+     padding-left: 0;
+     font-size: 80%;
+}
 
+.higher {
+    margin-top:0;
+    margin-left:0em; 
+    margin-right: 0; 
+}
+
+.higher img {
+    width:164px;
+    padding:0;
+    margin:0;
+}
+.higher figcaption { 
+    font-size: 80%;
+}
+
+section figcaption {
+    display: block;
+    padding-left: 0;
+    font-size: 80%;
+}
+
+div {
+    float:left; 
+    margin-top: 2em;
+}
+
+.last3 figure {
+    margin-left: 0;
+    float:right;    
+}
 #right_aside {
     width: 200px;   
     float:right;         
 }
+#last_one {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#before_last {
+    margin-left: 0;
+}
+#before_last img {
+    width:150px;
+}
 
 #right_aside div h2 {
     padding-right: 10px;
-    padding-left: 1em; 
+    padding-left: 2em; 
     font-size: 120%;
     color: white;
     text-shadow: -1px -1px 1px black;
@@ -230,6 +288,15 @@ article h3 {
     list-style: none;
     color: white;
     text-shadow: -1px -1px 1px black;
+    text-align: center;
+}
+#right_aside div ul li a{
+    padding-bottom: 1em;
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    text-align: right;
 }
 
 #right_aside div {
@@ -237,7 +304,7 @@ article h3 {
     background-color: darkcyan;
     margin-top: 5em;
  }
-/* Styles for the footer*/
+/* styles for the footer*/
 footer {
     width: 962px;
     border-top: 1px solid black;
