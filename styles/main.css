@@ -10,54 +10,50 @@ html {
     background-image: linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
 }
 
-/* Styles for the body*/
+h2, p, a{
+    padding: 1em;
+    font-family: aria, Helvetica, sans-serif;
+    color: black;
+    text-shadow: -1px -1px 1px white;
+}
+
+/* styles for the body */
 body {
     width:962px;
     border: 1px solid black;
-    margin: 15px auto; 
+    margin: 15px auto;
     background-color: hsl(180,60%,50%,.5);  
+}
+
+/* styles for the header */
+
+header {
+    width: 962px;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+    background-color: hsl(180,60%,50%,.5);   
 }
 
 header img {
     float:left;
-    
-    margin-right: 30px;
-    margin-top: 5px;
     margin: 5px 30px 5px 5px;
     padding: 5px;
-    border: 1px solid black;
 }
 
-h2, p, a{
-    padding: 1em;
-    font-family: sans-serif, Arial, Helvetica; 
-    color: black;  
-    text-shadow: -1px -1px 1px white;   
-}
-/* Styles for the header*/
-header {
-    width: 962px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    background-color: hsl(180,60%,50%,.5);   
-}
-
-header h2 {   
-    font-family: 'Courier New', Courier, monospace;
+header h2 {
     text-shadow: -1px -1px 1px white;;
     text-align: left;
-    padding-bottom: 5px;
+    padding-bottom: .25em;
 }
 
 header h3 {
-    
-    font-family: 'Courier New', Courier, monospace;
     text-shadow: -1px -1px 1px white;
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: .5em;
     
 }
-/* Styles for the Navegation Bar*/
+
+/* styles for the Navigation Bar */
 #nav_menu ul {
     list-style-type: none;
     padding: 0;
@@ -81,14 +77,12 @@ header h3 {
     background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
-    /*text-shadow: -1px -1px 1px white;*/
     color: white;
     text-shadow: 1px 1px 1px #003399;
 }
 #nav_menu ul li a:hover {
     color: yellow;    
 }
-
 
 #nav_menu ul ul{
     display: none;
@@ -122,11 +116,10 @@ header h3 {
     position: absolute; 
     top:0;   
 }
-
-/* Styles for the main*/
+/* styles for the left aside */
 #left_aside {
     width: 168px; 
-    height: 620px;  
+    height: 820px;  
     float:left; 
     border: 1px solid blue;
     border-radius: 0 10px 10px 0;
@@ -152,119 +145,72 @@ header h3 {
     padding-right: 1em;
  }
 
- #left_aside ol li a{
+#left_aside ol li p, #left_aside ol li a{
     padding: 0;
-    padding-left: 15px;
-    margin-top: 10px;
+    text-align: center;
     color: white;
     text-shadow: -1px -1px 1px black;
-    text-align: justify;
- }
+    text-decoration: none;
+}
 
  #left_aside ol a:visited {
     color: #cc6699;
  }
 
- #left_aside img {
+#left_aside img {
      height: 100px;
      width: 150px;
      margin-bottom: 10px;
      border: 1px solid blue;
  }
 
-section {
-    width: 575px;
-    float:left;
+#left_aside img[class="no_border"] {
+    border: none;
 }
 
-section h1{
-    font-family: sans-serif, Arial, Helvetica; 
-    color: black;  
-    text-shadow: -1px -1px 1px white;   
-    font-size: 150%;
-    padding-left: 2.5em;
+#left_aside a:hover, #left_aside a:focus {
+    font-style: italic;
 }
 
-section figure {
-    margin-left: 3em;
+/* styles for the article */
+article {
+    width:540px;
     float: left;
-
-    
+    border-right: 1px solid black;    
+    height: 800px;
+    padding-left: 20px;   
+    margin-right: 10px;
+    padding-bottom: 20px;
 }
 
-section figure img {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
+article h2 {
+    padding-left: 2em;
 }
 
-.larger img {
-    height: 100px;
-    width: 150px;
-    border: 1px solid black;
-    padding: 0;
-    margin: 0;  
+article img {   
+    margin: 0 1.5em .75em .75em;   
+    border: 2px solid #003399;
+    box-shadow: 4px -4px 4px 4px #003399;
+    border-radius: 10px 0 5px 10px;
+    float:right;
 }
 
-.larger {
-    margin-top: 3em;
-    margin-left: 0;
+article h3 {    
+    font-size: 100%;
+    padding-right: 20px;
+    line-height: 1.4em;
 }
 
-.larger figcaption {
-     display: block;
-     padding-left: 0;
-     font-size: 80%;
-}
+/* styles for the aside */
 
-.higher {
-    margin-top:0;
-    margin-left:0em; 
-    margin-right: 0; 
-}
-
-.higher img {
-    width:164px;
-    padding:0;
-    margin:0;
-}
-.higher figcaption { 
-    font-size: 80%;
-}
-
-section figcaption {
-    display: block;
-    padding-left: 0;
-    font-size: 80%;
-}
-
-div {
-    float:left; 
-    margin-top: 2em;
-}
-
-.last3 figure {
-    margin-left: 0;
-    float:right;    
-}
 #right_aside {
     width: 200px;   
     float:right;         
 }
-#last_one {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-#before_last {
-    margin-left: 0;
-}
-#before_last img {
-    width:150px;
-}
 
 #right_aside div h2 {
     padding-right: 10px;
-    padding-left: 2em; 
+    padding-left: 1em; 
     font-size: 120%;
     color: white;
     text-shadow: -1px -1px 1px black;
@@ -285,15 +231,6 @@ div {
     list-style: none;
     color: white;
     text-shadow: -1px -1px 1px black;
-    text-align: center;
-}
-#right_aside div ul li a{
-    padding-bottom: 1em;
-    font-size: 100%;
-    list-style: none;
-    color: white;
-    text-shadow: -1px -1px 1px black;
-    text-align: right;
 }
 
 #right_aside div {
@@ -301,7 +238,7 @@ div {
     background-color: darkcyan;
     margin-top: 5em;
  }
-/* Styles for the footer*/
+/* styles for the footer*/
 footer {
     width: 962px;
     border-top: 1px solid black;
