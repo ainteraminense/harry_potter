@@ -12,16 +12,16 @@ html {
 
 h2, p, a{
     padding: 1em;
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: aria, Helvetica, sans-serif;
     color: black;
     text-shadow: -1px -1px 1px white;
 }
 
-/* styles for the body*/
+/* styles for the body */
 body {
     width:962px;
     border: 1px solid black;
-    margin: 15px auto; 
+    margin: 15px auto;
     background-color: hsl(180,60%,50%,.5);  
 }
 
@@ -31,12 +31,12 @@ header {
     width: 962px;
     border-bottom: 1px solid black;
     padding-bottom: .5em;
-    background-color: hsl(180,60%,50%,.5);
+    background-color: hsl(180,60%,50%,.5);   
 }
 
 header img {
     float:left;
-    margin: 5px 30px 0 5px;
+    margin: 5px 30px 5px 5px;
     padding: 5px;
 }
 
@@ -50,52 +50,77 @@ header h3 {
     text-shadow: -1px -1px 1px white;
     text-align: left;
     padding-bottom: .5em;
+    
 }
 
 /* styles for the Navigation Bar */
 #nav_menu ul {
     list-style-type: none;
-    clear: both;
+    padding: 0;
+    position: relative;   
 }
 
 #nav_menu ul li {
-    float: left;
+    display: inline;
+    padding: 0em;
+    float:left;
 }
 
-#nav_menu ul li a{
-    padding: 1.5em 0;
-    text-align: center;
-    display: block;
+#nav_menu ul li a {
+    font-weight: bold;
+    padding: 1em 0;   
+    text-align:center;
     text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    text-shadow: 1px 1px 1px #003399;
-    width: 239px;
-    border-right: 2px solid white;
+    display:block;
+    width:320.65px;
     background-image: -webkit-linear-gradient( 45deg, #003399 0%, #003399 50%, #003399 100%);
     background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
-}
-
-#nav_menu .last_item {
-    border-right: none;
-}
-
-#nav_menu .current {
     color: white;
-    font-weight: bolder;
-    text-shadow: 1px 1px 1px #334d4d;
-    background-image: -webkit-linear-gradient( to right, white 0%, #334d4d 50%, white 100%);
-    background-image: -o-linear-gradient( to right, white 0%, #003399 50%, white 100%);
-    background-image: -moz-linear-gradient( to right, white 0%, #003399 50%, white 100%);
-    background-image: linear-gradient(  to right, white 0%, #334d4d 50%, white 100%);
+    text-shadow: 1px 1px 1px #003399;
+}
+#nav_menu ul li a:hover {
+    color: yellow;    
+}
+
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top:100%;    
+}
+
+#nav_menu ul ul li {
+    float:none;
+    position:relative;
+}
+
+#nav_menu > ul::after, #nav_menu ul ul::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+#nav_menu ul li:hover > ul, #nav_menu ul li:focus > ul {    
+    display: block;    
+}
+
+#nav_menu ul ul li ul {
+    right: -100%;
+    position: absolute; 
+    top:0;   
+}
+
+#nav_menu ul ul li.last_item ul li ul {
+    left: -100%;
+    position: absolute; 
+    top:0;   
 }
 /* styles for the left aside */
 #left_aside {
-    width: 168px;
-    height: 820px;
-    float:left;
+    width: 168px; 
+    height: 820px;  
+    float:left; 
     border: 1px solid blue;
     border-radius: 0 10px 10px 0;
     box-shadow: 1px 0 2px 2px blue;
@@ -118,7 +143,7 @@ header h3 {
 #left_aside ol li {
     padding-bottom: 2em;
     padding-right: 1em;
-}
+ }
 
 #left_aside ol li p, #left_aside ol li a{
     padding: 0;
@@ -128,16 +153,16 @@ header h3 {
     text-decoration: none;
 }
 
-#left_aside ol a:visited {
+ #left_aside ol a:visited {
     color: #cc6699;
-}
+ }
 
 #left_aside img {
-    height: 100px;
-    width: 150px;
-    margin-bottom: 10px;
-    border: 1px solid blue;
-}
+     height: 100px;
+     width: 150px;
+     margin-bottom: 10px;
+     border: 1px solid blue;
+ }
 
 #left_aside img[class="no_border"] {
     border: none;
@@ -147,39 +172,72 @@ header h3 {
     font-style: italic;
 }
 
-/* styles for the section */
-
-table {
-    border: 1px solid black;
-    margin-left: 30px;
-    margin-top: 10px;
+/* styles for the article */
+article {
+    width:540px;
     float: left;
+    border-right: 1px solid black;    
+    height: 800px;
+    padding-left: 20px;   
+    margin-right: 10px;
+    padding-bottom: 20px;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: .1em .5em;
-    text-align: right;
+article h2 {
+    padding-left: 2em;
 }
 
-th.left, td.left{
-    border: 1px solid black;
-    padding: .1em .5em;
-    text-align: left;
-}
-thead, tfoot {
-    background-color: azure;
-    font-weight: bold;
+article img {   
+    margin: 0 1.5em .75em .75em;   
+    border: 2px solid #003399;
+    box-shadow: 4px -4px 4px 4px #003399;
+    border-radius: 10px 0 5px 10px;
+    float:right;
 }
 
-section figure figcaption {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 150%;
+article h3 {    
+    font-size: 100%;
+    padding-right: 20px;
+    line-height: 1.4em;
 }
 
+/* styles for the aside */
 
+#right_aside {
+    width: 200px;   
+    float:right;         
+}
+
+#right_aside div h2 {
+    padding-right: 10px;
+    padding-left: 1em; 
+    font-size: 120%;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
+#right_aside div ul {
+    padding-right: 1em;
+    padding-left: 1em; 
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
+#right_aside div ul li{
+    padding-bottom: 1em;
+    font-size: 100%;
+    list-style: none;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
+#right_aside div {
+    margin-right: .5em;
+    background-color: darkcyan;
+    margin-top: 5em;
+ }
 /* styles for the footer*/
 footer {
     width: 962px;

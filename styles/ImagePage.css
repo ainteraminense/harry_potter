@@ -53,69 +53,71 @@ header h3 {
 }
 /* styles for the Navigation Bar*/
 
+/* styles for the header */
+
+header {
+    width: 962px;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+    background-color: hsl(180,60%,50%,.5);
+}
+
+header img {
+    float:left;
+    margin: 5px 30px 0 5px;
+    padding: 5px;
+}
+
+header h2 {
+    text-shadow: -1px -1px 1px white;;
+    text-align: left;
+    padding-bottom: .25em;
+}
+
+header h3 {
+    text-shadow: -1px -1px 1px white;
+    text-align: left;
+    padding-bottom: .5em;
+}
+
+/* styles for the Navigation Bar */
 #nav_menu ul {
     list-style-type: none;
-    padding: 0;
-    position: relative;   
+    clear: both;
 }
 
 #nav_menu ul li {
-    display: inline;
-    padding: 0em;
-    float:left;
+    float: left;
 }
 
-#nav_menu ul li a {
-    font-weight: bold;
-    padding: 1em 0;   
-    text-align:center;
+#nav_menu ul li a{
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
     text-decoration: none;
-    display:block;
-    width:320.65px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #003399;
+    width: 239px;
+    border-right: 2px solid white;
     background-image: -webkit-linear-gradient( 45deg, #003399 0%, #003399 50%, #003399 100%);
     background-image: -o-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: -moz-linear-gradient( 45deg, #003399 0%, white 50%, #003399 100%);
     background-image: linear-gradient(  to right, #003399 0%, #003399 50%, white 100%);
-    /*text-shadow: -1px -1px 1px white;*/
+}
+
+#nav_menu .last_item {
+    border-right: none;
+}
+
+#nav_menu .current {
     color: white;
-    text-shadow: 1px 1px 1px #003399;
-}
-#nav_menu ul li a:hover {
-    color: yellow;    
-}
-
-
-#nav_menu ul ul{
-    display: none;
-    position: absolute;
-    top:100%;    
-}
-
-#nav_menu ul ul li {
-    float:none;
-    position:relative;
-}
-
-#nav_menu > ul::after, #nav_menu ul ul::after {
-    content: "";
-    display: block;
-    clear:both;
-}
-
-#nav_menu ul li:hover > ul, #nav_menu ul li:focus > ul {    
-    display: block;    
-}
-
-#nav_menu ul ul li ul {
-    right: -100%;
-    position: absolute; 
-    top:0;   
-}
-
-#nav_menu ul ul li.last_item ul li ul {
-    left: -100%;
-    position: absolute; 
-    top:0;   
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #334d4d;
+    background-image: -webkit-linear-gradient( to right, white 0%, #334d4d 50%, white 100%);
+    background-image: -o-linear-gradient( to right, white 0%, #003399 50%, white 100%);
+    background-image: -moz-linear-gradient( to right, white 0%, #003399 50%, white 100%);
+    background-image: linear-gradient(  to right, white 0%, #334d4d 50%, white 100%);
 }
 
 /* styles for the left aside */
